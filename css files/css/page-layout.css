@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 80%;
+  margin: 32px;
+  border: 1px solid lightseagreen;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+h1 {
+  margin: 0;
+  padding: 0.25em;
+  color: lightcyan;
+  text-shadow: 5px 5px 5px navy;
+  font-size: 200%;
+}
+
+img {
+  float: left;
+  margin: 0 1em 1em 0.5em;
+}
+
+p {
+  margin-top: 0;
+  padding-bottom: 0.5em;
+  font-variant: small-caps;
+}
+
+p > span {
+  font-family: cursive;
+}
+
+footer {
+  text-align: right;
+}

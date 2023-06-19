@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  margin: 1em auto;
+  /* padding: 16px; */
+  /* border: 1px solid gray; */
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+header img {
+  float: left;
+  margin-right: 1em;
+}
+
+header h1 {
+  color: #00ccff;
+  text-shadow: 3px 3px 2px gray;
+}
+
+header h3 {
+  margin: 0;
+  color: gray;
+  font-weight: 500;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+#first_nav ul {
+  float: right;
+  list-style-type: none;
+}
+
+#first_nav ul li {
+  display: inline;
+  /* background-color: blue; */
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+
+#first_nav ul li a:hover {
+  color: skyblue;
+}
+
+#first_nav ul li a {
+  color: gray;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#first_nav ul li a:current {
+  color: brown;
+}
+
+section img {
+  /* margin: 0; */
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#sec_nav {
+  clear: both;
+  margin-top: 2em;
+}
+
+#sec_nav ul {
+  list-style-type: none;
+  padding: 1em 0;
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#sec_nav ul li {
+  display: inline;
+  padding: 0 1.5em;
+}
+
+#sec_nav ul li a {
+  font-weight: bold;
+  color: blue;
+}
+
+#sec_nav ul li a.current {
+  text-decoration: none;
+}
+
+/* Third navigation */
+#thrid_nav {
+  margin: 2em;
+}
+
+#thrid_nav ul {
+  list-style-type: none;
+}
+
+#thrid_nav ul li {
+  float: left;
+}
+
+#thrid_nav ul li a {
+  text-align: center;
+  display: block;
+  width: 150px;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border-right: 2px solid white;
+}
+
+#thrid_nav ul li a.lastitem {
+  border-right: none;
+}
+
+#thrid_nav ul li a.current {
+  color: yellow;
+}
+
+#fourth_nav {
+  clear: both;
+  margin-top: 2em;
+  background-color: blue;
+}
+
+#fourth_nav ul a {
+  text-align: center;
+  display: block;
+  width: 150px;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  /* border-right: 2px solid white; */
+}
+
+#fourth_nav ul {
+  list-style-type: none;
+  position: relative;
+  text-align: center;
+}
+
+#fourth_nav ul li {
+  float: left;
+}
+
+#fourth_nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+#fourth_nav ul ul li {
+  float: none;
+}
+
+#fourth_nav ul li:hover > ul {
+  display: block;
+}
+
+#fourth_nav > ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,85 @@
+/* Universal selector */
+* {
+  color: crimson;
+}
+
+/* Type selector */
+h4 {
+  color: blue;
+}
+
+/* Descendent selector */
+p big {
+  color: darkgreen;
+}
+
+div sup {
+  color: #000;
+}
+
+/* Class selector */
+.smaller {
+  font-size: xx-small;
+}
+
+.colourful {
+  color: blueviolet;
+}
+
+/* ID selector */
+#sup {
+  color: cornflowerblue;
+}
+
+p#sup {
+  color: cornflowerblue;
+}
+
+#sup sub {
+  color: coral;
+}
+
+/* Child selector */
+p > big {
+  font-size: xx-large;
+  color: gray;
+}
+
+/* Attribute selector */
+input[type="submit"] {
+  background-color: blue;
+  border-style: none;
+  box-shadow: none;
+  border-radius: 8px;
+  width: 80px;
+  font-weight: bold;
+  color: white;
+  padding: 4px;
+}
+
+input[type="text"] {
+  padding: 4px;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: none;
+}
+
+label[title="name"] {
+  color: blue;
+}
+
+sup[id="sup"] {
+  font-size: xx-large;
+}
+
+/* Grouping selectors */
+h4,
+big,
+small {
+  color: burlywood;
+}
+
+#sup,
+#span {
+  color: darkgrey;
+}
