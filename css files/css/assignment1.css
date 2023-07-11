@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.sidebar {
+  width: 20%;
+}
+
+.sidebar h2 {
+  margin: 1rem 0 1rem 2rem;
+}
+
+.aside-container {
+  display: inline-block;
+  margin: 0 2em 1em;
+  background-color: white;
+}
+
+.aside-img {
+  width: 100px;
+  height: 100px;
+}
+
+.aside-container h3,
+a {
+  margin-bottom: 0.5rem;
+}
+
+.aside-container a {
+  display: block;
+  font-weight: 200;
+  text-decoration: none;
+}

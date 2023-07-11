@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  height: 200vw;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  box-shadow: 0 0 10px lightgray;
+}
+
+.nav_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+
+.nav_logo {
+  list-style: none;
+  margin-right: auto;
+  cursor: pointer;
+}
+/**/
+img {
+  width: 1.6rem;
+  transition: fill 250ms ease-in;
+}
+
+.nav_listitem {
+  list-style: none;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav_listitem:hover ul,
+.nav_listitem:focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav_listitem::after {
+  content: "";
+  width: 0;
+  height: 0.3rem;
+  left: 1rem;
+  bottom: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: #7917db;
+  position: absolute;
+  transition: width 300ms ease-in;
+}
+
+.nav_listitem:hover::after {
+  width: 60%;
+}
+
+.nav_dropdown {
+  position: absolute;
+  top: 100%;
+  left: -3rem;
+  box-shadow: 0 0 10px lightgray;
+  background-color: white;
+  border-radius: 0.2rem;
+  width: 12rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out;
+}
+
+.nav_dropdown li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  transition: background-color 200ms ease-in-out;
+}
+
+.nav_dropaside {
+  position: absolute;
+  left: 100%;
+  /* top: 0; */
+  box-shadow: 0 0 10px lightgray;
+  background-color: white;
+  border-radius: 0.2rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 12rem;
+  padding: 1rem;
+}
+
+.nav_dropaside li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  transition: background-color 200ms ease-in-out;
+}
+
+.nav_dropdown li:hover,
+li:focus {
+  background-color: #d2b9eb;
+}
+
+.nav_dropdown li:hover,
+li:focus > ul {
+  display: block;
+}
+
+main {
+  margin: 5rem 2rem;
+  z-index: -10;
+}

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.nav-area {
+  box-shadow: 0 2px 4px gray;
+}
+
+.nav_logo img {
+  width: 60px;
+}
+
+.nav-area ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.nav-area ul li > ul {
+  display: none;
+  flex-direction: column;
+}
+
+.nav-area ul li > ul li {
+  width: 100%;
+}
+
+.nav-area {
+}
